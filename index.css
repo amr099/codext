@@ -110,7 +110,7 @@ button,
 button:hover,
 .btn:hover {
   background-color: var(--light-clr);
-  border: 1px solid var(var(--main-clr));
+  border: 1px solid var(--main-clr);
   color: var(--main-clr);
 }
 
