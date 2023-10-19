@@ -119,13 +119,13 @@ button,
 .btn {
   background-color: var(--main-clr);
   padding: 15px 30px;
+  border: 1px solid var(--main-clr);
   border-radius: 5px;
   color: #fff;
   font: 20px main-medium;
   white-space: nowrap;
   &:hover {
     background-color: var(--light-clr);
-    border: 1px solid var(--main-clr);
     color: var(--main-clr);
   }
 }
@@ -155,9 +155,9 @@ nav {
 nav.mobile {
   min-height: 100vh;
   width: 100%;
+  left: 0;
   top: 0;
-  right: 0;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +166,7 @@ nav.mobile {
   background-color: rgba(242, 245, 250, 0.8);
   backdrop-filter: blur(5px);
   color: #060e1a;
+  z-index: 2;
   a {
     font: 20px main-semibold;
   }
@@ -239,7 +240,7 @@ nav a:not(:last-child) {
     width: 100%;
     background-color: rgba(242, 245, 250, 0.8);
     backdrop-filter: blur(5px);
-    z-index: 1;
+    z-index: 2;
     padding: 0 3rem;
   }
   header {
