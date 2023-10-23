@@ -1,11 +1,15 @@
 $(()=>{
     $('.burger').on('click',()=>{
-        $('nav.mobile').removeClass('hide')
-        $('nav.mobile').addClass('flex')
+        $('nav').addClass('flex')
+        $('nav').removeClass('hide')
+        $('.close').removeClass('hide')
+        $('.burger').addClass('hide')
     })
 
     $('.close').on('click',()=>{
-        $('nav.mobile').addClass('hide')
+        $('nav').addClass('hide')
+        $('.close').addClass('hide')
+        $('.burger').removeClass('hide')
     })
 
     // pricing interactions

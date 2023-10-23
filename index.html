@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./imgs/logo.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <script src="jquery.js"></script>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
     <title>Codext</title>
   </head>
   <body>
+
+   <main>
     <section class="hero" id="home">
       <div class="container">
-        <header>
-          <div class="logo">
-            <img src="./imgs/logo.png" alt="codex-logo" />
-          </div>
-          <nav class="desktop">
+        <header>  
+          <img src="./imgs/logo.png" class="logo" alt="codext-logo" />
+          <nav>
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#pricing">Pricing</a>
@@ -26,19 +26,10 @@
             <a href="#news">Blog</a>
             <a href="/" class="btn">Free Trail</a>
           </nav>
-          <img src="./svgs/burger.svg" alt="" class="burger hide" />
-
-          <nav class="mobile hide">
-            <img src="./svgs/close.svg" alt="" class="close" />
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#review">Testemonails</a>
-            <a href="#news">Blog</a>
-            <a href="/" class="btn">Free Trail</a>
-          </nav>
+          <img src="./svgs/burger.svg" alt="" class="nav-icon burger" />
+          <img src="./svgs/close.svg" alt="" class="nav-icon hide close" />
         </header>
-        <main>
+        <div class="hero-wrapper">
           <div class="text" data-aos="slide-right">
             <h1>Codext one of the best system in <span>SAAS</span>.</h1>
             <p>
@@ -47,10 +38,8 @@
             </p>
             <button>Try A Live Demo</button>
           </div>
-          <div class="hero-img" data-aos="zoom-in">
-            <img src="./imgs/hero.png" alt="" />
-          </div>
-        </main>
+          <img src="./imgs/hero.png" alt="" data-aos="zoom-in" class="hero-img"/>
+        </div>
       </div>
     </section>
 
@@ -60,7 +49,7 @@
           <img src="./imgs/vector.png" alt="" class="vector" />
           <img src="./imgs/preview.png" alt="preview-img" />
         </div>
-        <main data-aos="slide-left">
+        <div data-aos="slide-left" class="text">
           <h2>It’s very helpful for operating system</h2>
 
           <div>
@@ -89,14 +78,14 @@
               vestibulum cras. Consequat.
             </p>
           </div>
-        </main>
+        </div>
       </div>
     </section>
 
     <section class="features" id="services">
       <div class="container" data-aos="slide-left">
         <h2>We Provides best Features for customer</h2>
-        <main>
+        <div class="features-wrapper">
           <figure>
             <div class="img">
               <img src="./svgs/fet-1.png" alt="" />
@@ -135,21 +124,19 @@
               <p>Lorem ipsum dolor sit amet ecte adipiscing elitIpsum.</p>
             </figcaption>
           </figure>
-        </main>
+        </div>
       </div>
     </section>
 
     <section class="pricing" id="pricing">
-      <div class="container" data-aos="slide-right">
-        <header>
+        <div class="pricing-header">
           <h2>Choose your best pricing plan</h2>
             <h5 class="flex">
               Added for <span class="monthly selected">Monthly</span>
               <div class="toggle"><span></span></div>
               <span class="yearly">Yearly</span>
           </div>
-        </header>
-        <main>
+        <div class="cards-wrapper">
           <div class="card">
             <header>
               <h4>Start-up</h4>
@@ -221,7 +208,7 @@
             </div>
             <button>TRY THIS PACKAGE</button>
           </div>
-        </main>
+        </div>
       </div>
     </section>
 
@@ -236,7 +223,7 @@
         </p>
       </header>
     </div>
-      <main>
+      <div class="map">
         <div><img src="./imgs/rev-1.png" alt="" /></div>
         <div>
           <img src="./imgs/rev-3.png" alt="" />
@@ -244,13 +231,13 @@
         <div><img src="./imgs/rev-2.png" alt="" /></div>
         <div><img src="./imgs/rev-4.png" alt="" /></div>
         <div><img src="./imgs/rev-5.png" alt="" /></div>
-      </main>
+      </div>
     </section>
 
     <section class="news" id="news">
       <div class="container">
         <h2>Lastest insights news</h2>
-        <main>
+        <div class="wrapper">
           <figure>
             <div class="img">
               <img src="./imgs/news-1.png" alt="" data-aos="fade-down-right" />
@@ -286,9 +273,10 @@
               <button>Continue</button>
             </figcaption>
           </figure>
-        </main>
+        </div>
       </div>
     </section>
+  </main>
 
     <footer data-aos="fade-up">
       <div class="container">
@@ -339,9 +327,9 @@
     </footer>
 
     <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
   </body>
 </html>
