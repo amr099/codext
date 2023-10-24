@@ -123,10 +123,25 @@ button:hover,
 }
 
 .container {
-  width: 80%;
+  width: 1140px;
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 400px;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -236,6 +251,7 @@ header {
 }
 
 .hero {
+  margin-bottom: 7rem;
   background-image: linear-gradient(to bottom right, #d8eff2, #d3d0e1);
   padding-bottom: 7rem;
 }
@@ -254,6 +270,7 @@ header {
   gap: 2rem;
 }
 .hero .text {
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -276,6 +293,9 @@ header {
     padding-bottom: 5rem;
   }
 }
+.preview {
+  margin-bottom: 7rem;
+}
 .preview .container {
   display: flex;
   justify-content: space-around;
@@ -285,7 +305,7 @@ header {
 }
 .preview img:nth-child(1) {
   position: absolute;
-  left: -100px;
+  left: -150px;
   z-index: -1;
 }
 .preview .text {
@@ -319,6 +339,7 @@ header {
   }
 }
 .features {
+  margin-bottom: 7rem;
   text-align: center;
 }
 .features .features-wrapper {
@@ -335,7 +356,8 @@ header {
   border-radius: 5px;
   box-shadow: 0px 6px 50px 5px rgba(0, 0, 0, 0.05);
   flex-basis: 18%;
-  min-width: 260px;
+  width: 260px;
+  min-width: 230px;
 }
 .features figure:after {
   content: url("./svgs/arrow.png");
@@ -363,6 +385,7 @@ header {
 }
 
 .pricing {
+  margin-bottom: 7rem;
   text-align: center;
 }
 .pricing .pricing-header {
@@ -418,14 +441,19 @@ header {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   box-shadow: 0px 6px 50px 5px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
 }
 .pricing .card header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0;
   text-align: center;
   z-index: 1;
 }
@@ -487,18 +515,23 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.review {
+  margin-bottom: 7rem;
+}
 .review header {
   text-align: center;
   margin: 0 auto 3rem;
 }
 .review .map {
+  position: relative;
+  left: 0;
+  top: 0;
   background-image: url("./imgs/map.png"), linear-gradient(to right, var(--light-clr), #fff);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 700px;
-  position: relative;
 }
 .review .map div {
   position: absolute;
@@ -533,6 +566,9 @@ header {
   font: 8px main-regular;
 }
 
+.news {
+  margin-bottom: 7rem;
+}
 .news h2 {
   text-align: center;
 }
@@ -585,7 +621,6 @@ header {
   }
 }
 footer {
-  margin-top: 7rem;
   background-color: var(--light-clr);
   padding: 5rem 0;
 }
