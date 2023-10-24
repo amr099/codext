@@ -23,24 +23,23 @@ $xsmall: 360px;
 
 @font-face {
   font-family: main-regular;
-  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: main-medium;
-  src: url(./fonts/Poppins/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: main-semibold;
-  src: url(./fonts/Poppins/Poppins-SemiBold.ttf);
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
 }
 @font-face {
   font-family: main-bold;
-  src: url(./fonts/Poppins/Poppins-Bold.ttf);
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
-
 @font-face {
   font-family: main-medium-italic;
-  src: url(./fonts/Poppins/Poppins-MediumItalic.ttf);
+  src: url(../fonts/Poppins/Poppins-MediumItalic.ttf);
 }
 
 :root {
@@ -90,25 +89,30 @@ h3 {
 }
 
 h1 {
-  font: 62px main-bold;
+  font: 62px main-bold, sans serif;
 }
 h2 {
-  font: 30px main-semibold;
+  font-size: 30px;
+  font-family: main-semibold, sans serif;
   margin-bottom: 3rem;
 }
 h3 {
-  font: 25px main-medium;
+  font-size: 25px;
+  font-family: main-medium, sans serif;
   margin-bottom: 2rem;
 }
 h4 {
-  font: 22px main-medium;
+  font-size: 22px;
+  font-family: main-medium, sans serif;
   color: var(--sec-clr);
 }
 h5 {
-  font: 16px main-regular;
+  font-size: 16px;
+  font-family: main-regular, sans serif;
 }
 p {
-  font: 18px main-regular;
+  font-size: 18px;
+  font-family: main-regular, sans serif;
   color: var(--sec-clr);
   line-height: 1.6;
 }
@@ -123,7 +127,8 @@ button,
   border: 1px solid var(--main-clr);
   border-radius: 5px;
   color: #fff;
-  font: 20px main-medium;
+  font-size: 20px;
+  font-family: main-medium, sans-serif;
   white-space: nowrap;
   &:hover {
     background-color: var(--light-clr);
@@ -167,6 +172,7 @@ main {
 }
 
 .hero header {
+  padding: 1rem 2rem;
   @include row(1rem, space-between);
 }
 
@@ -312,7 +318,7 @@ header {
 
     @for $i from 1 through 3 {
       div:nth-child(#{$i + 1}) h3:before {
-        content: url("./svgs/pre-#{$i}.png");
+        content: url("../svgs/pre-#{$i}.png");
         margin-right: 1rem;
       }
     }
