@@ -315,7 +315,10 @@ header {
   }
   img:nth-child(1) {
     position: absolute;
-    left: -150px;
+    object-fit: contain;
+    height: auto;
+    top: 0;
+    left: 0;
     z-index: -1;
   }
   .text {
@@ -341,7 +344,7 @@ header {
   margin-bottom: 7rem;
   text-align: center;
   .features-wrapper {
-    @include row(4rem, center);
+    @include row(2rem, center);
     flex-wrap: wrap;
   }
   figure {
@@ -600,21 +603,32 @@ footer {
   background-color: var(--light-clr);
   padding: 5rem 0;
   .container {
-    @include row(4rem, space-between, start);
+    @include row(1.5rem, space-between, start);
     flex-wrap: wrap;
   }
   .col {
     @include col(1rem, start, start);
     &:nth-child(1) {
-      width: 340px;
+      @include col(2rem, start, start);
+      width: 330px;
+    }
+    &:nth-child(2) {
+      width: 170px;
+    }
+    &:nth-child(3) {
+      width: 170px;
+    }
+    &:nth-child(4) {
+      width: 320px;
     }
   }
+
   h4 {
     color: #060e1a;
     margin-bottom: 1rem;
   }
   .social {
-    @include row(2rem);
+    @include row(1rem, start, start);
   }
   .email {
     border: 1px solid var(--main-clr);
@@ -622,7 +636,8 @@ footer {
     border-radius: 5px;
   }
   input {
-    padding-left: 1rem;
+    width: 100%;
+    padding: 0 1rem;
     font: 18px main-semibold;
 
     &::placeholder {
@@ -638,7 +653,6 @@ footer {
 
 @media (max-width: $mobile) {
   footer .email {
-    margin: 0 auto;
     @include row(1rem, space-between);
     input {
       max-width: 100px;

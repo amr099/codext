@@ -317,7 +317,11 @@ header {
 }
 .preview img:nth-child(1) {
   position: absolute;
-  left: -150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 .preview .text {
@@ -358,7 +362,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 .features figure {
@@ -640,7 +644,7 @@ footer .container {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 4rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 footer .col {
@@ -651,7 +655,21 @@ footer .col {
   gap: 1rem;
 }
 footer .col:nth-child(1) {
-  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+  width: 330px;
+}
+footer .col:nth-child(2) {
+  width: 170px;
+}
+footer .col:nth-child(3) {
+  width: 170px;
+}
+footer .col:nth-child(4) {
+  width: 320px;
 }
 footer h4 {
   color: #060e1a;
@@ -659,9 +677,9 @@ footer h4 {
 }
 footer .social {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
 }
 footer .email {
   border: 1px solid var(--main-clr);
@@ -672,7 +690,8 @@ footer .email {
   border-radius: 5px;
 }
 footer input {
-  padding-left: 1rem;
+  width: 100%;
+  padding: 0 1rem;
   font: 18px main-semibold;
 }
 footer input::-moz-placeholder {
@@ -690,7 +709,6 @@ footer .copy {
 
 @media (max-width: 768px) {
   footer .email {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
