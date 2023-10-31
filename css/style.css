@@ -232,14 +232,6 @@ nav a:not(:last-child):hover::after {
   nav a {
     font: 20px main-semibold;
   }
-  nav .nav-icon {
-    display: flex;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
 }
 .fixed-header {
   position: fixed;
@@ -372,8 +364,7 @@ header {
   border-radius: 5px;
   box-shadow: 0px 6px 50px 5px rgba(0, 0, 0, 0.05);
   flex-basis: 18%;
-  width: 260px;
-  min-width: 230px;
+  min-width: 240px;
 }
 .features figure:after {
   content: url("./svgs/arrow.png");
@@ -400,24 +391,22 @@ header {
   transform: scaleY(1);
 }
 
+@media (max-width: 768px) {
+  .features figure {
+    min-width: 180px;
+    padding: 1rem;
+  }
+}
 .pricing {
   margin-bottom: 7rem;
-  text-align: center;
 }
 .pricing .pricing-header {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-}
-.pricing .cards-wrapper {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  flex-wrap: wrap;
 }
 .pricing .flex {
   align-self: center;
@@ -452,8 +441,17 @@ header {
   height: 20px;
   border-radius: 20px;
 }
+.pricing .cards-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
 .pricing .card {
   position: relative;
+  width: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -494,10 +492,11 @@ header {
 .pricing .card::before {
   content: "";
   background-image: url("/svgs/wave.svg");
-  background-size: contain;
+  background-size: cover;
+  background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 35%;
   transform: scaleY(0);
   transform-origin: top;
   position: absolute;
@@ -530,6 +529,12 @@ header {
   .pricing .cards-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  .pricing .card {
+    padding: 1rem;
+  }
+  .pricing .selected {
+    font-size: 12px;
+  }
 }
 .review {
   margin-bottom: 7rem;
@@ -549,26 +554,28 @@ header {
   width: 100%;
   height: 700px;
 }
-.review .map div {
+.review .map img {
+  width: 50px;
+  height: 50px;
   position: absolute;
 }
-.review .map div:nth-child(1) {
+.review .map img:nth-child(1) {
   top: 15%;
   left: 10%;
 }
-.review .map div:nth-child(2) {
+.review .map img:nth-child(2) {
   top: 45%;
   left: 45%;
 }
-.review .map div:nth-child(3) {
+.review .map img:nth-child(3) {
   top: 25%;
   left: 75%;
 }
-.review .map div:nth-child(4) {
+.review .map img:nth-child(4) {
   top: 70%;
   left: 15%;
 }
-.review .map div:nth-child(5) {
+.review .map img:nth-child(5) {
   top: 75%;
   left: 80%;
 }
@@ -722,6 +729,9 @@ footer .copy {
   }
 }
 @media (max-width: 360px) {
+  .logo {
+    width: 100px;
+  }
   h1 {
     font: 31px main-bold;
   }
