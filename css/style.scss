@@ -420,7 +420,6 @@ header {
   }
   .card {
     position: relative;
-    width: 100%;
     background-color: #fff;
     @include col(2rem);
     @include shadow();
