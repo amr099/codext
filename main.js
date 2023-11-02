@@ -11,6 +11,7 @@ $(()=>{
         $('.close').addClass('hide')
         $('.burger').removeClass('hide')
     })
+    
 
     // pricing interactions
     $('.toggle').on('click',()=>{

@@ -24,6 +24,10 @@
   --sec-clr: #51565e;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -513,7 +517,7 @@ header {
   height: 100%;
   top: 5px;
   left: -1%;
-  z-index: -2;
+  z-index: -2 !important;
 }
 .pricing .card:hover::before, .pricing .card:hover::after {
   transform: scaleY(1);
