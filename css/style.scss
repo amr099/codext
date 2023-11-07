@@ -48,8 +48,9 @@ $xsmall: 360px;
   --sec-clr: #51565e;
 }
 
+html,
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 *,
