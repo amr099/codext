@@ -371,7 +371,7 @@ header {
   min-width: 240px;
 }
 .features figure:after {
-  content: url("./svgs/arrow.png");
+  content: url("../svgs/arrow.png");
   display: block;
   margin-top: 1rem;
 }
