@@ -22,10 +22,11 @@
   --main-clr: #2657a4;
   --light-clr: #e9eef6;
   --sec-clr: #51565e;
+  overflow-x: hidden !important;
 }
 
 body {
-  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 *,
@@ -303,18 +304,16 @@ header {
 }
 .preview {
   margin-bottom: 7rem;
+  position: relative;
 }
 .preview .container {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
   gap: 2rem;
-  position: relative;
 }
 .preview img:nth-child(1) {
   position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
   height: auto;
   top: 0;
   left: 0;
