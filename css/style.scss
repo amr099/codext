@@ -49,8 +49,10 @@ $xsmall: 360px;
 }
 
 html {
-    overflow-x: hidden !important;
     font-family: sans-serif;
+}
+body {
+    overflow-x: hidden !important;
 }
 
 *,
