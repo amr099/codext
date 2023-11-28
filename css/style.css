@@ -28,8 +28,9 @@ html {
   font-family: sans-serif;
 }
 
-body {
-  overflow-x: hidden !important;
+body,
+html {
+  overflow: hidden !important;
 }
 
 *,
