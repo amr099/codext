@@ -22,12 +22,10 @@
   --main-clr: #2657a4;
   --light-clr: #e9eef6;
   --sec-clr: #51565e;
-  overflow-x: hidden;
 }
 
-.animated-element {
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch; /* Add vendor prefixes as needed */
+html {
+  overflow-x: hidden;
 }
 
 *,
@@ -773,13 +771,5 @@ footer .copy {
   input,
   input::placeholder {
     font: 10px main-medium !important;
-  }
-}
-@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    /* Safari-specific styles here */
-    body {
-      overflow-x: hidden;
-    }
   }
 }/*# sourceMappingURL=style.css.map */
