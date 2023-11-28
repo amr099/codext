@@ -24,9 +24,9 @@
   --sec-clr: #51565e;
 }
 
+body,
 html {
-  font-family: sans-serif;
-  overflow: hidden !important;
+  overflow-x: hidden;
 }
 
 *,
