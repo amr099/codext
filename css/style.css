@@ -24,9 +24,13 @@
   --sec-clr: #51565e;
 }
 
-body,
 html {
   overflow-x: hidden;
+}
+
+.animated-element {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 *,
@@ -772,5 +776,13 @@ footer .copy {
   input,
   input::placeholder {
     font: 10px main-medium !important;
+  }
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    /* Safari-specific styles here */
+    body {
+      overflow-x: hidden;
+    }
   }
 }/*# sourceMappingURL=style.css.map */
