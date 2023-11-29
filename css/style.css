@@ -529,6 +529,9 @@ header {
   .pricing .selected {
     font-size: 12px;
   }
+  .review {
+    display: none;
+  }
 }
 .review {
   margin-bottom: 7rem;
