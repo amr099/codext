@@ -263,9 +263,10 @@ header {
 }
 
 .hero {
+  width: 100%;
   margin-bottom: 7rem;
-  background-image: linear-gradient(to bottom right, #d8eff2, #d3d0e1);
   padding-bottom: 7rem;
+  background-image: linear-gradient(to bottom right, #d8eff2, #d3d0e1);
 }
 .hero .container {
   display: flex;
@@ -306,6 +307,7 @@ header {
   }
 }
 .preview {
+  width: 100%;
   margin-bottom: 7rem;
   position: relative;
 }
@@ -539,13 +541,14 @@ header {
 }
 .review {
   margin-bottom: 7rem;
+  position: relative;
+  width: 100%;
 }
 .review header {
   text-align: center;
   margin: 0 auto 3rem;
 }
 .review .map {
-  position: relative;
   left: 0;
   top: 0;
   background-image: url("../imgs/map.png"), linear-gradient(to right, var(--light-clr), #fff);
@@ -558,11 +561,11 @@ header {
 .review .map img {
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: relative;
 }
 .review .map img:nth-child(1) {
   top: 15%;
-  left: 10%;
+  left: 20%;
 }
 .review .map img:nth-child(2) {
   top: 45%;
@@ -570,7 +573,7 @@ header {
 }
 .review .map img:nth-child(3) {
   top: 25%;
-  left: 75%;
+  left: 65%;
 }
 .review .map img:nth-child(4) {
   top: 70%;
@@ -578,7 +581,7 @@ header {
 }
 .review .map img:nth-child(5) {
   top: 75%;
-  left: 80%;
+  left: 70%;
 }
 .review .map p {
   font: 9px main-medium-italic;
