@@ -328,7 +328,7 @@ header {
 
         @for $i from 1 through 3 {
             div:nth-child(#{$i + 1}) h3:before {
-                content: url("../svgs/pre-#{$i}.png");
+                content: url("../svgs/pre-#{$i}.webp");
                 margin-right: 1rem;
             }
         }
@@ -357,7 +357,7 @@ header {
         flex-basis: 18%;
         min-width: 240px;
         &:after {
-            content: url("../svgs/arrow.png");
+            content: url("../svgs/arrow.webp");
             display: block;
             margin-top: 1rem;
         }
@@ -519,7 +519,7 @@ header {
     .map {
         left: 0;
         top: 0;
-        background-image: url("../imgs/map.png"),
+        background-image: url("../imgs/map.webp"),
             linear-gradient(to right, var(--light-clr), #fff);
         background-repeat: no-repeat;
         background-size: cover;
